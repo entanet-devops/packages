@@ -3,3 +3,10 @@
   package:
     name: "{{ packages }}"
     state: present
+
+- name: Install deb packages.
+  apt:
+    deb: "{{ item }}"
+    update_cache: yes
+  with_items:
+    - "{{ deb_packages }}"
