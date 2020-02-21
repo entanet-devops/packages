@@ -4,4 +4,5 @@ packages:
   - zip
   - python3-pip
 
-deb_packages: []
+deb_packages:
+  - debconf-utils
